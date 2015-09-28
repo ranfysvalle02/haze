@@ -240,7 +240,7 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid rgba(0,0,0,0.9);
 }
 .main-container{
 	font-family: 'Titillium Web', sans-serif;
@@ -320,7 +320,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background: #e44d26;
+    background: white;
     opacity:0.8;
 }
 nav a>img{

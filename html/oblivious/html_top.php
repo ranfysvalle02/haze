@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>haze</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -41,12 +41,12 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">oblivious<?php echo $nav_breadcrumb;?></h1>
+                <h1 class="title">haze<?php echo $nav_breadcrumb;?></h1>
                 <nav>
                 <ul>
-	                <li><a href="<?php echo $nav_path;?>"><img src="<?php echo $path_from_index;?>flaticon/svg/house158.svg"/></a></li>
+	                <li><a href="<?php echo $nav_path;?>"><img src="<?php echo $path_from_index;?>flaticon/svg/visualization.svg"/></a></li>
 	                <li><a href="<?php echo $nav_path;?>view/add/"><img src="<?php echo $path_from_index;?>flaticon/svg/add20.svg"/></a></li>
-	                <li><a href="<?php echo $nav_path;?>view/settings/"><img src="<?php echo $path_from_index;?>flaticon/svg/three115.svg"/></a></li>
+	                <li><a href="<?php echo $nav_path;?>view/settings/"><img src="<?php echo $path_from_index;?>flaticon/svg/gear74.svg"/></a></li>
 	            </ul>
                 </nav>
             </header>
