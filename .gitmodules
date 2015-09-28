@@ -1,0 +1,12 @@
+[submodule "sub_modules/slimphp"]
+	path = sub_modules/slimphp
+	url = https://github.com/slimphp/Slim.git
+[submodule "sub_modules/jsloadimage"]
+	path = sub_modules/jsloadimage
+	url = https://github.com/blueimp/JavaScript-Load-Image.git
+[submodule ".\\sub_modules/jsqrcode"]
+	path = .\\sub_modules/jsqrcode
+	url = https://github.com/LazarSoft/jsqrcode.git
+[submodule ".\\sub_modules/furtive"]
+	path = .\\sub_modules/furtive
+	url = https://github.com/johnotander/furtive.git
