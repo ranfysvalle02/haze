@@ -1,4 +1,6 @@
 console.log('settings page');
+$.blockUI.defaults.timeout = 40000;//30s timeout
+
 //http://fabian-valle.comapi/remove/categories/dimelo
 //http://fabian-valle.comapi/add/categories/dimelo
 //execute callback when the page is ready:

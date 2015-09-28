@@ -1,5 +1,7 @@
 console.log('home page');
 $.blockUI.defaults.message = "";
+$.blockUI.defaults.timeout = 40000;//30s timeout
+
 //execute callback when the page is ready:
 $( document ).ready(function() {
   // Handler for .ready() called.

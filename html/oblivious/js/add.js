@@ -1,6 +1,7 @@
 console.log('add page');
 
 $.blockUI.defaults.message = "";
+$.blockUI.defaults.timeout = 40000;//30s timeout
 //add-image-button
 //execute callback when the page is ready:
 $( document ).ready(function() {
