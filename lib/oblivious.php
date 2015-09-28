@@ -581,7 +581,7 @@ private function _createCategory($category){
 		}
 	}
 	private function _removeBasePath($path){
-		$root_path = realpath( dirname(__FILE__).'/../data/oblivious/' );
+		$root_path = realpath( dirname(__FILE__).'/../data/haze/' );
 		$path2return = str_replace($root_path,'',$path);
 		return $path2return;
 	}
@@ -605,6 +605,7 @@ private function _createCategory($category){
 				}
 				
 			} else if(is_dir($path) && $value != "." && $value != "..") {
+				
 				$this->_getDirContents($path, $results);
 				//discussions are in folders - keep in mind
 				//but whether its an opendiscussion should

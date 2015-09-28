@@ -210,7 +210,7 @@ var oblivious = (function () {
 		        delete_token:  deleteToken,
 		        category:category
 		      };
-		var url = "api/remove/entry/";
+		var url = "/api/remove/entry/";
 		var reqObj = {
 				url: url,
 			     data: d
@@ -253,7 +253,7 @@ var oblivious = (function () {
 		var pkey=false;
 		$.ajax({
 	        async: false,
-	        url: "api/get/publickeys/"+cat,
+	        url: "/api/get/publickeys/"+cat,
 	        dataType: "json",
 	        data: {},
 	        success: function(data){
@@ -305,7 +305,7 @@ var oblivious = (function () {
 		}
 		
 		
-		var url = "api/create/entry/";
+		var url = "/api/create/entry/";
 		var reqObj = {
 				url: url,
 			     data: entrydata
@@ -349,7 +349,7 @@ var oblivious = (function () {
 				entry_id:entryID,
 				category:category
 		};
-		var url = "api/get/entry/meta/";
+		var url = "/api/get/entry/meta/";
 		var reqObj = {
 				url: url,
 			     data: d
@@ -374,7 +374,7 @@ var oblivious = (function () {
 				entry_id:entryID,
 				category:category
 		};
-		var url = "api/get/entry/";
+		var url = "/api/get/entry/";
 		var reqObj = {
 				url: url,
 			     data: d
@@ -541,7 +541,7 @@ var oblivious = (function () {
 		        encrypted:encrypted
 		      };
 		console.log('before post',d);
-		var url = "api/create/entry/";
+		var url = "/api/create/entry/";
 		var reqObj = {
 				url: url,
 			     data: d
