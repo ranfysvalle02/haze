@@ -1,6 +1,6 @@
 console.log('settings page');
-//http://fabian-valle.com/oblivious/api/remove/categories/dimelo
-//http://fabian-valle.com/oblivious/api/add/categories/dimelo
+//http://fabian-valle.comapi/remove/categories/dimelo
+//http://fabian-valle.comapi/add/categories/dimelo
 //execute callback when the page is ready:
 $( document ).ready(function() {
 // Handler for .ready() called.
@@ -11,8 +11,8 @@ $( document ).ready(function() {
 	};
 	oblivious_viewdata.removeCat = function(){
 		var cat = $(this).text();
-		$.getJSON('/oblivious/api/remove/categories/'+cat+'/',function(data){
-			$.getJSON('/oblivious/api/list/categories/',function(d){
+		$.getJSON('/api/remove/categories/'+cat+'/',function(data){
+			$.getJSON('/api/list/categories/',function(d){
 				oblivious_viewdata.categories = d.Categories;
 			});
 		});
@@ -20,7 +20,7 @@ $( document ).ready(function() {
 	rivets.bind($('#oblivious_categorylist'), {
 		viewdata: oblivious_viewdata
 	});
-	$.getJSON('/oblivious/api/list/categories/',function(data){
+	$.getJSON('/api/list/categories/',function(data){
 		oblivious_viewdata.categories = data.Categories;
 	});
 	
@@ -28,8 +28,8 @@ $( document ).ready(function() {
 		var cat = $("#new-category").val();
 		console.log('cat',cat);
 		$("#new-category").val('');
-		$.getJSON('/oblivious/api/add/categories/'+cat+'/',function(data){
-			$.getJSON('/oblivious/api/list/categories/',function(d){
+		$.getJSON('/api/add/categories/'+cat+'/',function(data){
+			$.getJSON('/api/list/categories/',function(d){
 				oblivious_viewdata.categories = d.Categories;
 			});
 		});
@@ -46,8 +46,8 @@ $( document ).ready(function() {
 			return false;
 		}
 		$("#current-category").val('');
-		$.getJSON('/oblivious/api/remove/categories/'+cat+'/',function(data){
-			$.getJSON('/oblivious/api/list/categories/',function(d){
+		$.getJSON('/api/remove/categories/'+cat+'/',function(data){
+			$.getJSON('/api/list/categories/',function(d){
 				oblivious_viewdata.categories = d.Categories;
 			});
 		});

@@ -50,7 +50,7 @@ $( document ).ready(function() {
 	rivets.bind($('#oblivious_addentry'), {
 		viewdata: oblivious_viewdata
 	});
-	$.getJSON('/oblivious/api/list/categories/',function(data){
+	$.getJSON('/api/list/categories/',function(data){
 		oblivious_viewdata.categories = data.Categories;
 	});
 	

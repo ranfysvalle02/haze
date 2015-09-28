@@ -16,7 +16,7 @@ $( document ).ready(function() {
 	oblivious_data.subnav.travel = function(){
 		var cat = $(this).val();
 		$.blockUI({ onBlock:function(){
-			$.getJSON('/oblivious/api/list/entries/'+cat+'/',function(data){
+			$.getJSON('/api/list/entries/'+cat+'/',function(data){
 				oblivious_data.entries = data.Entries;
 				console.log('data.Entries',data.Entries);
 				oblivious_data.subnav.active = cat;
@@ -43,7 +43,7 @@ $( document ).ready(function() {
 		oblivious_viewentry_data: oblivious_viewentry_data
 	});
 	
-	$.getJSON('/oblivious/api/list/categories/',function(data){
+	$.getJSON('/api/list/categories/',function(data){
 			oblivious_data.categories = data.Categories;
 			oblivious_data.subnav.content = data.Categories;
 			oblivious_data.subnav.active = '(choose a category to begin...)';

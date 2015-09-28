@@ -3,18 +3,29 @@
         <div class="main-container oblivious-home remodal-bg">
             <div class="main wrapper clearfix">
 			 <div id="subnav-home">
-  					<div rv-if="oblivious_data.subnav.categories">
-                 		<a id="loadblackbook-button" class="btn--blue full-width">Load Blackbook</a>
-  						
-                	    <div id="category-container">
-                	    	<select  rv-on-change="oblivious_data.subnav.travel"	 id="current-category">
-                	    		<option class="category-btn btn btn--s full-width">(choose a category)</option>
-                	    		<option rv-each-category="oblivious_data.subnav.content" class="category-btn btn btn--s full-width">{category}</option>
-                	    	</select>
-                		</div>
-                		<hr />
-                		
-                	</div>
+			 		<article>
+			 			<section>
+			 				<h3>Blackbook</h3>
+			 				<p>                 		<a id="loadblackbook-button" class="btn--blue full-width">Load Blackbook</a>
+			 				</p>
+			 			</section>
+			 		</article>
+			 		<article>
+			 			<section>
+			 			<div rv-if="oblivious_data.subnav.categories">
+	  						
+	                	    <div id="category-container">
+	                	    	<select  rv-on-change="oblivious_data.subnav.travel"	 id="current-category">
+	                	    		<option class="category-btn btn btn--s full-width">(choose a category)</option>
+	                	    		<option rv-each-category="oblivious_data.subnav.content" class="category-btn btn btn--s full-width">{category}</option>
+	                	    	</select>
+	                		</div>
+	                		<hr />
+	                		
+	                	</div>
+			 			</section>
+			 		</article>
+	  					
                 	                  
                 </div>
                 <article id="oblivious_entrylist">
